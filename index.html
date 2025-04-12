@@ -3,33 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>BrawlPedia | 🌟</title>
+  <title>About — Brawlpedia</title>
   <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
-      background: #fbca03;
-      color: #000000;
+      background: #fcdb32;
+      color: #f5f5f5;
       display: flex;
-      justify-content: center;
-      align-items: center;
       height: 100vh;
+    }
+    .sidebar {
+      width: 220px;
+      background-color: #e39607;
+      padding: 1.5em;
+      display: flex;
       flex-direction: column;
-      text-align: center;
+      box-shadow: 2 0px 8px rgba(0,0,0,0.4);
     }
-    h1 {
+    .sidebar h1 {
       font-family: 'Lilita One', cursive;
-      font-size: 3.5em;
-      margin: 0.5em 0;
+      font-size: 1.6em;
+      margin-bottom: 2em;
     }
-    p {
-      color: #000;
-      font-size: 1.1em;
+    .sidebar a {
+      color: #000000;
+      text-decoration: none;
+      margin-bottom: 1em;
+      font-weight: bold;
+      transition: color 0.2s ease;
+    }
+    .sidebar a:hover {
+      color: #ffcd70;
+    }
+    .content {
+      flex: 1;
+      padding: 2em;
+      overflow-y: auto;
+    }
+    .content h2 {
+      font-family: 'Lilita One', cursive;
+    }
+    .discord-button {
+      display: inline-block;
+      background-color: #ff7b00;
+      color: white;
+      padding: 0.75em 1.5em;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      border: 2px solid #e06700;
+      margin-top: 1.5em;
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+    .discord-button:hover {
+      background-color: #e06700;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
     }
   </style>
 </head>
 <body>
-  <h1>Brawlpediuhh... what?</h1>
-  <p>Coming soon!!!!!11!1!111</p>
-  <p>Alex is a lazy bum & cant get his stuff together</p>
+
+  <div class="sidebar">
+    <h1>Brawlpedia</h1>
+    <a href="/">About</a>
+    <a href="/contact/">Contact</a>
+  </div>
+
+  <div class="content">
+    <h2>What even is BrawlPedia?</h2>
+    <p>
+      <strong>BrawlPedia</strong> is a Discord Bot that revolves around the Brawl Stars mobile game.
+      When configured, it can spawn a range of brawlers and skins that are able to be caught via typing their name!
+      Some brawlers can have special "fame" cards, ranging from <em>global</em> to <em>alien</em> fame.
+    </p>
+    <p>
+      Another way of obtaining brawlers is by opening boxes using the <code>/open_box</code> command.
+      There are 4 kinds of boxes: <strong>Small</strong>, <strong>Big</strong>, <strong>Mega</strong>, and <strong>Omega</strong> —
+      each with a chance of 49%, 35%, 15%, and 1% respectively.
+    </p>
+
+    <h2>Is there a server for BrawlPedia?</h2>
+    <p>
+      Yes there is! You can join the BrawlPedia server by clicking the button below.
+      In the <strong>Overview</strong> channel, you’ll find the bot’s authorization link — just follow the steps to add it to your server.
+    </p>
+
+    <a class="discord-button" href="https://discord.gg/S6b4nZnzVj" target="_blank"></a>
+  </div>
+
+</body>
+</html>
